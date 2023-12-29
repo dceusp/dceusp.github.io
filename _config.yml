@@ -1,0 +1,25 @@
+title:              DCE Livre da USP
+# email:
+description:        Diretório Central dos Estudantes da Universidade de São Paulo
+author:             DCE Livre da USP
+baseurl:            "/"
+url:                "http://localhost:4000"
+
+# Redes Sociais
+# twitter_username:
+github_username:    dceusp
+facebook_username:  "DCEdaUSP"
+instagram_username: "dceusp"
+linkedin_username:
+
+# Adicionar aqui o ID do Google Analytics
+# google_analytics:   UA-XXXXXXXXX-X
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/tribuna/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site

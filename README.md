@@ -1,2 +1,3 @@
-# dceusp.github.io
-Repositório do site do Diretório Central dos Estudantes Livre da USP "Alexandre Vannucchi Leme"
+# 🚩 Diretório Central dos Estudantes da Universidade de São Paulo
+
+Repositório do site do DCE Livre da USP.
