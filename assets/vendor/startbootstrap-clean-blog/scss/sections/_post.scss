@@ -1,0 +1,187 @@
+// Styling for the post page
+.post-preview {
+    >a {
+        color: $white;
+
+        &:focus,
+        &:hover {
+            text-decoration: none;
+            color: $preto;
+        }
+
+        >.post-title {
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+
+            @media all and (max-width: 576px) {
+                font-size: 15px;
+                margin: 0px;
+            }
+        }
+
+        >.post-subtitle {
+            font-weight: 300;
+            margin: 0 0 10px;
+            font-size: 15px;
+            
+            @media all and (max-width: 576px) {
+                margin-top: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    >.post-meta {
+        font-size: 18px;
+        font-style: italic;
+        margin-top: 0;
+        color: $white;
+
+        >a {
+            text-decoration: none;
+            color: $white;
+
+            &:focus,
+            &:hover {
+                text-decoration: underline;
+                color: $primary;
+            }
+        }
+
+        @media all and (max-width: 576px) {
+            font-size: 14px;
+            margin: 0px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        >a {
+            >.post-title {
+                font-size: 25px;
+            }
+            >.post-subtitle {
+                font-size: 20px;
+            }
+        }
+    }
+
+    @media all and (max-width: 991px) {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(0,0,0,0.5);
+    }
+}
+
+.post-preview:hover {
+    cursor: pointer;
+    >a {
+        color: $preto;
+    }
+    @media all and (max-width: 991px) {
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+
+.post-conteudo {
+    a {
+        color: $preto;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $cinza2;
+        text-decoration: underline;
+    }
+}
+
+
+.post-destaque {
+    margin-top: 10px;
+    padding: 15px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    h2 {
+        font-size: 28px;
+    }
+
+    div.post-destaque-infos {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    @media all and (max-width: 767px) {
+        h2, div {
+            font-size: larger;
+        }
+    }
+    @media all and (max-width: 442px) {
+        h2, div {
+            font-size: large;
+        }
+        height: 250px;
+    }
+}
+
+.post-destaque:hover {
+    text-decoration: none;
+    color: $white;
+}
+
+.post-row {
+    @media all and (max-width: 991px) {
+        position: relative;
+        min-height: 150px;
+        margin: 30px 0px;
+    }
+    @media all and (min-width:992px) {
+        margin: 0px;
+        padding: 0px 10px;
+    }
+    border-radius: 10px;
+}
+.post-row:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.2);
+    transition-duration: 0.1s;
+
+    .post-preview {
+        cursor: pointer;
+        >a {
+            color: $preto;
+        }
+        @media all and (max-width: 991px) {
+            background-color: rgba(0,0,0,0.8);
+        }
+    }
+    .post-meta {
+        color: $preto;
+    }
+}
+
+.post-preview-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 30px 0px;
+
+    @media all and (max-width: 991px) {
+        min-height: 150px;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        margin: 0px;
+    }
+}
+
+.post-subtitle-desc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* start showing ellipsis when 3rd line is reached */
+    white-space: pre-wrap; /* let the text wrap preserving spaces */
+}
