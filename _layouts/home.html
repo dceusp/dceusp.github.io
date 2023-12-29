@@ -27,6 +27,25 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-md-10 mx-auto">
+
+        <section class="slider">
+
+          <div class="seta arrow-left"><i class="fas fa-chevron-circle-left"></i></div>
+    
+            <img src="img/slider/slide1.jpg" alt="slide-1.jpg">
+            <img src="img/slider/slide2.jpg" alt="slide-2.jpg">
+            <img src="img/slider/slide3.jpg" alt="slide-3.jpg">
+    
+          <div class="seta arrow-right"><i class="fas fa-chevron-circle-right"></i></div>
+        
+        </section>
+        
+        <br><br>
+
+        <section id="calendar"></section>
+
+        <br><br>
+
         <b>DESTAQUE</b>
         <br>
         {% for post in site.posts limit : 1 %}
