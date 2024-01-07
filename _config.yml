@@ -3,14 +3,13 @@ title:              DCE Livre da USP
 description:        Diretório Central dos Estudantes da Universidade de São Paulo
 author:             DCE Livre da USP
 baseurl:            "/"
-url:                "http://localhost:4000"
+url:                "https://dceusp.github.io"
 
 # Redes Sociais
 # twitter_username:
 github_username:    dceusp
 facebook_username:  "DCEdaUSP"
 instagram_username: "dceusp"
-linkedin_username:
 
 # Adicionar aqui o ID do Google Analytics
 # google_analytics:   UA-XXXXXXXXX-X
